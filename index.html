@@ -9,9 +9,9 @@
     (function () {
       var mobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Mobile|Tablet/i.test(navigator.userAgent);
       if (mobile) {
-        window.location.replace('./mobile.html');
+        window.location.replace('./mobile.html' + window.location.search);
       } else {
-        window.location.replace('./desktop.html');
+        window.location.replace('./desktop.html' + window.location.search);
       }
     })();
   </script>
